@@ -1,3 +1,14 @@
+# PLASCHEMA
+
+## Plateau State Universal Health Care by PLASCHEMA
+
+
+Welcome to Plateau Health portal. Our mandate 
+is to ensure access to affordable, equitable, timely and quality healthcare,
+with financial security for all residents of 
+Plateau State irrespective of their socioeconomic status
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
