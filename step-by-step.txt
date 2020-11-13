@@ -1,0 +1,14 @@
+
+
+git add .
+
+git commit -m "Your commit message here"
+
+
+git checkout -b name-of-branch e.g git checkout -b ft-header-component
+
+git push origin name-of-branch e.g git push origin ft-header-component
+
+
+go to repo and raise a PULL REQUEST (PR).
+
