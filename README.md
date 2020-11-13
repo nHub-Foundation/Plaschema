@@ -1,6 +1,6 @@
-# PLASCHEMA
+<!-- # PLASCHEMA -->
 
-## Plateau State Universal Health Care by PLASCHEMA
+# Plateau State Universal Health Care by PLASCHEMA
 
 
 Welcome to Plateau Health portal. Our mandate 
