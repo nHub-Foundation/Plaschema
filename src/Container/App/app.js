@@ -15,6 +15,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>PLASCHEMA</h1>
+        <p>Plateaiu state</p>
       </div>
     );
   }
