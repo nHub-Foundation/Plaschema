@@ -1,0 +1,17 @@
+.sidemenu{
+    background-color: rgb(32, 214, 32) ;
+    color: white;
+    width: 20vw;
+    height: 60vh;
+}
+
+.sidemenu li{
+    list-style: none;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.sidemenu li:hover{
+    color: yellow;
+    background-color: rgba(43, 58, 56, .2);
+    text-align: center;
+}
