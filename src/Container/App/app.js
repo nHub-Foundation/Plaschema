@@ -1,5 +1,6 @@
 import React from 'react';
 import './app.css';
+import Body from '../Body-Component/body';
 
 
 class App extends React.Component {
@@ -14,8 +15,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>PLASCHEMA</h1>
-        <p>Plateaiu state</p>
+        
+        <Body/>
       </div>
     );
   }
