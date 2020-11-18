@@ -2,10 +2,14 @@ import React from 'react';
 import Card from '../Card/card';
 import Footer from '../Footer/footer';
 import './app.css';
+
 import '../Header/header';
 import Header from '../Header/header';
 import SideMenu from '../SideMenu/sideMenu';
 import AdminCard from '../Adcard/adminCard';
+
+import Body from '../Body-Component/body';
+
 
 
 class App extends React.Component {
@@ -60,6 +64,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <h1>PLASCHEMA</h1>
+        <Body/>
         <div className="cards">
           {
             items.map(item => (
