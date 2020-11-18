@@ -8,23 +8,21 @@ import './appointment-modal.css';
 class Appointment extends React.Component{
     render() {
         return(
-            <div class='container'>
-                <div class='card-header'>
-                       <h3>Book Appointment</h3> 
+            <div className="container">
+                <div class="form-name">
+                        <h3>Book An Appointment </h3>
                 </div>
-                <div class='card'>
-                    <div class='card-inputs'>
-                        <div> 
-                            <input type="text" placeholder="" />
+                <div className="ui card">
+                    <div class="ui form">
+                        <div class="field">
+                            <input type="text" placeholder="Enter enrollment ID"/>
                         </div>
-                        <div> 
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="field">
+                            <textarea rows="5" cols="" placeholder="Why do you want to see the Doctor?"></textarea>
                         </div>
-                        <div> 
-                            <input type="button" value="Submit Request"/>
-                        </div>                        
-                    </div>
+                        <button class="ui green button">Submit Request</button>
 
+                    </div>
                 </div>
             </div>
         );
