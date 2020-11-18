@@ -1,7 +1,15 @@
 import React from 'react';
 import Card from '../Card/card';
+import Footer from '../Footer/footer';
 import './app.css';
+
+import '../Header/header';
+import Header from '../Header/header';
+import SideMenu from '../SideMenu/sideMenu';
+import AdminCard from '../Adcard/adminCard';
+
 import Body from '../Body-Component/body';
+
 
 
 class App extends React.Component {
@@ -50,9 +58,11 @@ class App extends React.Component {
         buttonText: "Book Appointment"
 
       }
+    
     ]
     return (
       <div className="App">
+        <Header />
         <h1>PLASCHEMA</h1>
         <Body/>
         <div className="cards">
@@ -61,7 +71,18 @@ class App extends React.Component {
               <Card key={item.id} icon="" heading={item.heading} description={item.description} buttonText={item.buttonText} />
             ))
           }
-        </div>
+         </div>
+         <div className="cards">
+         {
+            items.map(item => (
+              <AdminCard key={item.id} icon="" heading={item.heading} description={item.description} />
+            ))
+          }
+         </div>
+
+        <SideMenu/>
+        
+        <Footer/>
       </div>
     );
   }
