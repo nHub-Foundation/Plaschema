@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../Card/card';
 import './app.css';
+import Body from '../Body-Component/body';
 
 
 class App extends React.Component {
@@ -53,6 +54,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>PLASCHEMA</h1>
+        <Body/>
         <div className="cards">
           {
             items.map(item => (
