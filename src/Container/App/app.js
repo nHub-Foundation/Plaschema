@@ -5,6 +5,9 @@ import './app.css';
 import Header from '../Header/header';
 import SideMenu from '../SideMenu/sideMenu';
 import AdminCard from '../Adcard/adminCard';
+import LogIn from '../Login/logIn';
+import AdminHeader from '../AdminHeader/adminHeader';
+import Chart from '../Chart/chart';
 
 
 class App extends React.Component {
@@ -58,7 +61,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
+        
         <h1>PLASCHEMA</h1>
+
+        <AdminHeader/>
         <div className="cards">
           {
             items.map(item => (
@@ -74,12 +80,17 @@ class App extends React.Component {
           }
          </div>
 
+         <Chart/>
+
         <SideMenu/>
+
+        <LogIn/>
         
         <Footer/>
       </div>
     );
   }
 }
+
 
 export default App;

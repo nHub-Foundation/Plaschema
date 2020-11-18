@@ -30,9 +30,9 @@ class Footer extends React.Component{
         return(
             <div className="footer">
                 <div className="footer__left">
-                    <button>about us</button>
-                    <button>faq</button>
-                    <button>contact us</button>
+                    <button>About Us</button>
+                    <button>Contact Us</button>
+                    <button>FAQ</button>
                 </div>
                 <div className="footer__right">
 

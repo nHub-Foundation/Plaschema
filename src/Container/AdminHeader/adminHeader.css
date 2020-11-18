@@ -1,0 +1,36 @@
+.adheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, .2);
+}
+
+
+.adheader img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.adheader button {
+    height: 35px;
+    cursor: pointer;
+    width: 100px;
+    color: white;
+    background-color: rgb(32, 214, 32);
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px
+}
+
+.adheader__right {
+   display: flex;
+   width: 200px;
+   justify-content: space-between; 
+   align-items: center;
+}
+
+.adheader__right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
