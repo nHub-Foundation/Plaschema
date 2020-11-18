@@ -1,14 +1,33 @@
 import React from 'react';
 import './card.css';
+import Accredit from '../../Assets/accredit.png';
+import Appoint from '../../Assets/appoint.png';
+import Enrol from '../../Assets/enrol.png';
+import Sub from '../../Assets/sub.png';
 
 
 class Card extends React.Component {
+  
   render() {
     return (
       <div className="card">
         <div className="cardFlex">
             <div className="icon">
-                <img src={`https://robohash.org/set_set4/?size=200x200`} alt='robots' />
+              {
+                this.props.description === "Total Enrolments" ? (
+                  <img src={Enrol} alt='not set' />
+                ) : 
+                this.props.description === "Facilities Accredited" ? (
+                  <img src={Accredit} alt='not set' />
+                ) : 
+                this.props.description === "Healthcare Professionals" ? (
+                  <img src={Appoint} alt='not set' />
+                ) : 
+                this.props.description === "Active subscriptions" ? (
+                  <img src={Sub} alt='not set' />
+                ) : null
+                
+              }
             </div>
             <div className="details">
                 <h1>
