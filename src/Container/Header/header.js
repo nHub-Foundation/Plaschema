@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
-import logo from '../../assets/logo.png';
-import avatar from '../../assets/avatar.png';
+import logo from '../../Assets/logo.png';
+import avatar from '../../Assets/avatar.png';
 
 
 
@@ -20,7 +20,6 @@ class Header extends React.Component {
             <img src={logo} alt="Logo" />
             <div className="header__right">
                 <img src={avatar} alt="" />
-                <p>Welcome, Adimin</p>
                 <button> LOGIN</button>
             </div>
         </div>

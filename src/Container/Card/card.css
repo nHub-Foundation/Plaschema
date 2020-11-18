@@ -12,19 +12,19 @@
 }
 
 .icon img {
-    width: 80px;
+    width: 50px;
 }
 
 .details h1{
     font-size: 23px;
-    margin-top: -5px;
+    margin-top: 5px;
 }
 
 .details p{
     font-size: 15px;
     max-width: 100px;
     justify-content: left;
-    margin-top: -13px;
+    margin: 10px 0px;
     color: rgb(32, 214, 32);
     min-width: 200px;
 }
