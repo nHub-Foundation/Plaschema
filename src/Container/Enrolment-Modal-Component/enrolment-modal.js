@@ -21,7 +21,7 @@ class Enrolment extends React.Component{
                             Call 0700PLATEAU for <br/>
                             more information
                         </p>
-                        <a href='#'>OK</a>
+                        <button>OK</button>
                     </div>
 
                 </div>

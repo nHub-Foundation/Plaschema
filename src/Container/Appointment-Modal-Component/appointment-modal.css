@@ -1,0 +1,17 @@
+.container {
+    margin: 13% auto;
+    width: 30%;
+    height: auto;
+}
+.card {
+    background: #fff;
+    height: 45vh;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-inputs{
+    
+}
+.card-inputs input {
+    
+}
