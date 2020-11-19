@@ -1,23 +1,18 @@
 import React from 'react';
-import './app.css';
-import Appointment from '../Appointment-Modal-Component/appointment-modal';
+import axios from 'axios'
+import Subscription from '../Subscription-Modal-Component/subscription-modal';
+
+
 
 
 
 class App extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      showModal: false
-    }
-  }
+  
 
   render() {
     return (
       <div className="App">
-        
-        <Appointment/>
+        <Subscription/>
       </div>
     );
   }

@@ -15,7 +15,7 @@ const CardDetail = ({person, selectedMenu}) => {
                                 <div className="ui segment details">
                                     <img src={ item.url }/>
                                     <h3>{item.id}</h3>
-                                    <p>Enrolment ID:{ item.albumId}</p>
+                                    <p>Enrolment ID:{ item.albumId }</p>
                                     <p>Gender: { item.thumbnailUrl }</p>
                                     <p>Status: { item.thumbnailUrl }</p>
                                     <p>Ward: { item.thumbnailUrl }</p>

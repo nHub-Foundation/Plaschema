@@ -1,0 +1,102 @@
+.ui.card {
+    margin: 0% auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20px;
+}
+.ui.form{
+    width: 70%;
+    margin: 2% auto;
+}
+
+.container {
+    margin: 0% auto;
+    width: 50%;
+    height: auto;
+}
+.addbtn {
+    width: 70%;
+    margin: 0 auto;
+}
+ .addbtn button{
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+.form-name h3 {
+    background-color: #3CBC51;
+    width: 30%;
+    height: auto;
+    padding: 7px 40px;
+    color: #fff;
+    position: relative;
+    left: -20px;
+    top: 30px;
+    z-index: 999;
+    border-radius: 2px;
+}
+.form-details p{
+    color: #8F8F8F;
+    line-height: 10px;
+}
+.form-details p:last-child{
+    color: #8F8F8F;
+    /* line-height: 10px; */
+    margin-top: 5px;
+}
+.form-drop{
+    display: flex;
+}
+.form-drop .field{
+    padding-left: 30px;
+
+}
+.form-drop-last .field{
+    padding-left: 30px;
+
+}
+
+.form-drop label{
+    padding-top: 5px;
+    color: #8F8F8F;
+}
+.form-drop-last {
+    padding-top: 5px;
+    display: flex;
+    color: #8F8F8F;
+
+}
+.subtable {
+    display: flex;
+    margin-top: 2%;
+}
+.ui.celled.table{
+    width: 70%;
+    margin-left: 15%;
+}
+.sidebtn{
+    padding-top: 47px;
+}
+.sidebtn .btn{
+    padding-top: 5px;
+}
+.sidebtn button{
+    display: inline;
+    /* padding-top: 50px; */
+
+}
+.total-amount h3{
+    margin-left: 15%;
+}
+.proceed-btn {
+    width: 70%;
+    margin-left: 15%;
+}
+.proceed-btn button{
+    width: 100%;
+    margin-top: 5px;
+}
+
+
