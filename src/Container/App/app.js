@@ -54,7 +54,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <h2>PLASCHEMA</h2>
         <Body/>
         <div className="cards">
           {
