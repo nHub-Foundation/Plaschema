@@ -12,10 +12,6 @@ import Body from '../Body-Component/body';
 
 
 
-class App extends React.Component {
-  constructor() {
-    super();
-
 
 
 class App extends React.Component {
