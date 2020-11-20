@@ -37,7 +37,7 @@ class App extends React.Component {
       {
         id: 3,
         heading: "120K",
-        description: "Active subscriptions",
+        description: "Active Subscriptions",
         buttonText: "Pay Subscription"
 
       },
@@ -54,7 +54,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <h1>PLASCHEMA</h1>
+        <h2>PLASCHEMA</h2>
         <Body/>
         <div className="cards">
           {
