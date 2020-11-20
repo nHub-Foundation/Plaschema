@@ -1,4 +1,8 @@
 import React from 'react';
+import axios from 'axios'
+import Subscription from '../Subscription-Modal-Component/subscription-modal';
+
+
 import Card from '../Card/card';
 import Footer from '../Footer/footer';
 import './app.css';
@@ -11,10 +15,10 @@ class App extends React.Component {
   constructor() {
     super();
 
-    this.state = {
-      showModal: false
-    }
-  }
+
+
+class App extends React.Component {
+  
 
   render() {
     const items = [
@@ -53,6 +57,7 @@ class App extends React.Component {
     ]
     return (
       <div className="App">
+
         <Header />
         <Body/>
         <div className="cards">
