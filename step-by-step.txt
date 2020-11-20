@@ -12,3 +12,4 @@ git push origin name-of-branch e.g git push origin ft-header-component
 
 go to repo and raise a PULL REQUEST (PR).
 
+git pull origin develop

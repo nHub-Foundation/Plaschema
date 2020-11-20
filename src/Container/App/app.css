@@ -1,4 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 
+.App {
+  text-align: center;
+  /* overflow: hidden; */
+  height:100vh;
+  /* position: relative; */
+}
+
+h2{
+  margin-top: -5px;
+}
 
 .App-logo {
   height: 40vmin;
@@ -24,6 +38,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

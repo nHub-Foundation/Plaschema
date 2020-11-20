@@ -16,10 +16,11 @@ class Body extends React.Component{
                         timely and quality healthcare, with financial security for all residents of Plateau State
                         irrespective of their socioeconomic status.
                     </p>
-                    <a href='#'>Get Started</a>
+
+                    <button>Get Started</button>
                 </div>
                 <div class='body-image'>
-                    <img src= {background} />
+                    <img src= {background} alt="pic" />
                 </div>
             </div>
         );
