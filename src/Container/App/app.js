@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios'
-import Subscription from '../Subscription-Modal-Component/subscription-modal';
+// import axios from 'axios'
+// import Subscription from '../Subscription-Modal-Component/subscription-modal';
 
 
 import Card from '../Card/card';
@@ -15,7 +15,7 @@ import Body from '../Body-Component/body';
 
 
 class App extends React.Component {
-  
+
 
   render() {
     const items = [
@@ -50,22 +50,22 @@ class App extends React.Component {
         buttonText: "Book Appointment"
 
       }
-    
+
     ]
     return (
       <div className="App">
 
         <Header />
 
-        <Body/>
+        <Body />
         <div className="cards">
           {
             items.map(item => (
               <Card key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
             ))
           }
-         </div>
-        <Footer/>
+        </div>
+        <Footer />
       </div>
     );
   }
