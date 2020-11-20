@@ -1,29 +1,30 @@
 import React from 'react';
+import axios from 'axios'
+import Subscription from '../Subscription-Modal-Component/subscription-modal';
+
+
 import Card from '../Card/card';
 import Footer from '../Footer/footer';
 import './app.css';
 import Header from '../Header/header';
-import SideMenu from '../SideMenu/sideMenu';
-import AdminCard from '../Adcard/adminCard';
-import LogIn from '../Login/logIn';
-import AdminHeader from '../AdminHeader/adminHeader';
-import Chart from '../Chart/chart';
+
+import Body from '../Body-Component/body';
+
 
 
 class App extends React.Component {
   constructor() {
     super();
 
-    this.state = {
-      showModal: false
-    }
-  }
+
+
+class App extends React.Component {
+  
 
   render() {
     const items = [
       {
         id: 1,
-        icon: "asdoiasdhausi",
         heading: "150K",
         description: "Total Enrolments",
         buttonText: "Enrol Today"
@@ -32,7 +33,6 @@ class App extends React.Component {
 
       {
         id: 2,
-        icon: "asdoiasdhausi",
         heading: "450",
         description: "Facilities Accredited",
         buttonText: "Apply Today"
@@ -41,16 +41,14 @@ class App extends React.Component {
 
       {
         id: 3,
-        icon: "asdoiasdhausi",
         heading: "120K",
-        description: "Active subscriptions",
+        description: "Active Subscriptions",
         buttonText: "Pay Subscription"
 
       },
 
       {
         id: 4,
-        icon: "asdoiasdhausi",
         heading: "3650+",
         description: "Healthcare Professionals",
         buttonText: "Book Appointment"
@@ -60,32 +58,17 @@ class App extends React.Component {
     ]
     return (
       <div className="App">
-        <Header />
-        
-        <h1>PLASCHEMA</h1>
 
-        <AdminHeader/>
+        <Header />
+
+        <Body/>
         <div className="cards">
           {
             items.map(item => (
-              <Card key={item.id} icon="" heading={item.heading} description={item.description} buttonText={item.buttonText} />
+              <Card key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
             ))
           }
          </div>
-         <div className="cards">
-         {
-            items.map(item => (
-              <AdminCard key={item.id} icon="" heading={item.heading} description={item.description} />
-            ))
-          }
-         </div>
-
-         <Chart/>
-
-        <SideMenu/>
-
-        <LogIn/>
-        
         <Footer/>
       </div>
     );
