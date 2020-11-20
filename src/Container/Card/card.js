@@ -23,12 +23,13 @@ class Card extends React.Component {
                 this.props.description === "Healthcare Professionals" ? (
                   <img src={Appoint} alt='not set' />
                 ) : 
-                this.props.description === "Active subscriptions" ? (
+                this.props.description === "Active Subscriptions" ? (
                   <img src={Sub} alt='not set' />
-                ) : null
-                
+                ) :null  
               }
+              
             </div>
+
             <div className="details">
                 <h1>
                     {this.props.heading}
@@ -38,6 +39,7 @@ class Card extends React.Component {
                 </p>
             </div>
         </div>
+
         <div className="button">
             <button>{this.props.buttonText}</button>
         </div>

@@ -37,7 +37,7 @@ class App extends React.Component {
       {
         id: 3,
         heading: "120K",
-        description: "Active subscriptions",
+        description: "Active Subscriptions",
         buttonText: "Pay Subscription"
 
       },
