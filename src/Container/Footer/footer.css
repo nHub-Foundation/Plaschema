@@ -2,6 +2,7 @@
     /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
+    position: fixed;
     margin-top: -10px;
     bottom: 0px;
     width: 100vw;

@@ -42,7 +42,7 @@ h2{
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
