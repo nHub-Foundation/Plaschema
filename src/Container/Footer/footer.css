@@ -2,8 +2,8 @@
     /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    margin-top: -10px;
+    /* position: fixed; */
+    margin-top: 10px;
     bottom: 0px;
     width: 100vw;
     box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, .2);
