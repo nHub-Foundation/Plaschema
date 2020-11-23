@@ -1,9 +1,9 @@
-.container {
+.container.enrolment {
     margin: 13% auto;
-    width: 30%;
+    width: 40%;
     height: auto;
 }
-.card {
+.card.enrolment {
     background: #fff;
     height: 45vh;
     width: 100%;
@@ -13,12 +13,14 @@
     height: 50px;
     border-bottom: 1px solid #8F8F8F;
     display: flex;
-    padding-left: 4%;
+    width: 100%;
+    padding-left: 2%;
 }
 .card-header p {
     font-size: 20px;
     color: #8F8F8F;
     margin-top: 10px;
+    text-align: right;
 }
 .card-header img{
     width: 40px;
@@ -26,7 +28,7 @@
     padding-top: 2%;
     opacity: .40;
     position: relative;
-    left: 30%;
+    left: 40%;
     
 }
 .card-detail p {
@@ -35,13 +37,16 @@
     margin: 10% auto;
     color: #8F8F8F;
 }
-.card-detail button {
-    background-color: #3CBC51;
+.ui.button {
+    background-color: rgb(32, 214, 32);
     color: #fff;
     padding: 5px 40px;
     font-size: 20px;
-    position: relative;
-    top: 12%;
-    left: 38%;
+    /* position: relative; */
+    /* top: 12%; */
+    /* left: 38%; */
     font-weight: 400;
+    width: 30%;
+    text-align: center;
 }
+

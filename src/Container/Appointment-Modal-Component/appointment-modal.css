@@ -1,34 +1,45 @@
-.ui.card {
+.ui.card.appointment {
     margin: 0% auto;
     width: 100%;
     height: 100%;
     position: relative;
     top: 90px;
 }
-.ui.form{
+.ui.form.appointment{
     width: 70%;
     margin: 10% auto;
+    position: inherit;
+    top: 0px;
 }
 
-.container {
+.container.appointment {
     margin: 0% auto;
     width: 50%;
     height: 50vh;
 }
-.ui.form button{
-    width: 100%;
-    
-}
 
-.form-name h3 {
-    background-color: #3CBC51;
-    width: 50%;
-    height: auto;
-    padding: 7px 10px;
+
+.form-name.appointment h3 {
+    background-color: rgb(32, 214, 32);
+    width: 20%;
+    height: 7%;
+    padding: 7px 20px;
     color: #fff;
     position: relative;
-    left: -20px;
-    top: 110px;
+    top: 130px;
+    left: 23%;
     z-index: 999;
     border-radius: 2px;
+}
+.form-name.appointment i {
+    position: relative;
+    top: 140px;
+    left: 53%;
+    z-index: 999;
+    
+}
+.ui.button{
+    background-color: rgb(32, 214, 32);
+    color: #fff;
+
 }
