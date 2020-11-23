@@ -1,0 +1,43 @@
+.footer {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .4);
+    height: 50px;
+
+}
+
+.footer__left {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left button, .footer__right button {
+    color: white;
+    background-color: rgb(32, 214, 32);
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+
+.footer__left button {
+    width: 200px;
+}
+
+.footer__right button {
+    width: 150px;
+}
+
+.footer__right {
+    min-width: 600px;
+
+}
+
