@@ -5,21 +5,21 @@ import infoLogo from '../../Assets/info-logo.png';
 
 
 
-const Enrolment= ({ handleClose, show }) => {
+const Enrolment = ({ handleClose, show }) => {
     const showHideClassName = show ? "modal display-block" : "modal display-none";
 
- return (
-    <div className={showHideClassName}>
-                   <div class='container enrolment'>
+    return (
+        <div className={showHideClassName}>
+            <div class='container enrolment'>
                 <div class='card enrolment'>
                     <div class='card-header'>
                         <p>Enrolment information</p>
-                        <img src= {infoLogo} />
+                        <img src={infoLogo} alt='info logo' />
                     </div>
                     <div class='card-detail'>
                         <p>Please meet our team member
-                            in your Ward to enrol.
-                            Call 0700PLATEAU for <br/>
+                        in your Ward to enrol.
+                            Call 0700PLATEAU for <br />
                             more information
                         </p>
                         <button className="ui button" onClick={handleClose}>OK</button>
@@ -28,12 +28,12 @@ const Enrolment= ({ handleClose, show }) => {
                 </div>
             </div>
 
-    </div>
+        </div>
 
-                       
-        
-     
-);
+
+
+
+    );
 };
 
 

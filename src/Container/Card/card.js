@@ -63,7 +63,7 @@ class Card extends React.Component {
                 ) : 
                 this.props.buttonText === "Apply Today" ? (
                   <div>
-                    <a href='#'></a>
+                    {/* <a href='#'></a> */}
                     <button onClick={this.showModal}>{this.props.buttonText}</button>
                   </div>
                 ) : 
