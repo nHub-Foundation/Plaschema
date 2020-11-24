@@ -7,7 +7,6 @@ import Card from '../Card/card';
 import Footer from '../Footer/footer';
 import './app.css';
 import Header from '../Header/header';
-
 import Body from '../Body-Component/body';
 
 

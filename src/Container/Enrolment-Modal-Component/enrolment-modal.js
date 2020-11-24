@@ -3,9 +3,6 @@ import './enrolment-modal.css';
 import infoLogo from '../../Assets/info-logo.png';
 
 
-
-
-
 class Enrolment extends React.Component {
     render() {
         return (

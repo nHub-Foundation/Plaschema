@@ -4,6 +4,8 @@ import Accredit from '../../Assets/accredit.png';
 import Appoint from '../../Assets/appoint.png';
 import Enrol from '../../Assets/enrol.png';
 import Sub from '../../Assets/sub.png';
+import Enrolment from '../Enrolment-Modal-Component/enrolment-modal';
+
 
 
 class Card extends React.Component {
@@ -41,7 +43,11 @@ class Card extends React.Component {
         </div>
 
         <div className="button">
-            <button>{this.props.buttonText}</button>
+            <button onClick={
+              this.props.buttonText === "Enrol Today" ? (
+                <Enrolment/>
+              ) :null
+            } >{this.props.buttonText}</button>
         </div>
       </div>
     );
