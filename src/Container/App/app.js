@@ -58,6 +58,7 @@ class App extends React.Component {
         <Header />
 
         <Body />
+
         <div className="cards">
           {
             items.map(item => (
@@ -65,6 +66,7 @@ class App extends React.Component {
             ))
           }
         </div>
+
         <Footer />
       </div>
     );

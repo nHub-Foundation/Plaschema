@@ -15,6 +15,7 @@
     display: flex;
     width: 100%;
     padding-left: 2%;
+    justify-content: space-around;
 }
 .card-header p {
     font-size: 20px;
@@ -28,7 +29,8 @@
     padding-top: 2%;
     opacity: .40;
     position: relative;
-    left: 40%;
+    /* left: 40%; */
+
     
 }
 .card-detail p {
