@@ -1,50 +1,72 @@
-.ui.card {
-    margin: 0% auto;
+.ui.card.subsciption {
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
-    position: relative;
-    top: 20px;
+    height: 550px;
+     position: relative; 
+     top: -40px; 
 }
-.ui.form{
+.ui.form.subsciption{
     width: 70%;
-    margin: 2% auto;
+    margin: 0 auto;
+    position: inherit;
+    top: 0px;
+    
 }
 
-.container {
-    margin: 0% auto;
-    width: 50%;
+.container.subsciption {
+    margin: 0 auto;
+    width: 70%;
     height: auto;
 }
 .addbtn {
     width: 70%;
     margin: 0 auto;
+    position: inherit;
+    top: 25px;
 }
  .addbtn button{
     width: 100%;
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    background-color: rgb(32, 214, 32);
+    color: #fff;
     
 }
+.form-name {
+   display: flex;
+}
+.form-name i{
+    position: relative;
+    left: 73%;
+    top: 25px;
+    z-index: 999;
+    border-radius: 2px;
+ }
 
 .form-name h3 {
-    background-color: #3CBC51;
-    width: 30%;
-    height: auto;
-    padding: 7px 40px;
+    background-color: rgb(32, 214, 32);
+    color: #fff;
+    width: 10%;
+    height: 7%;
+    padding: 7px 10px;
     color: #fff;
     position: relative;
-    left: -20px;
-    top: 30px;
+    left: 150px;
     z-index: 999;
     border-radius: 2px;
 }
-.form-details p{
+.form-details {
+    height: auto;
+}
+.form-details .p-one {
     color: #8F8F8F;
-    line-height: 10px;
+    /* line-height: 10px; */
+    display: flex;
+    justify-content: space-between;
 }
 .form-details p:last-child{
     color: #8F8F8F;
     /* line-height: 10px; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 .form-drop{
     display: flex;
@@ -70,11 +92,15 @@
 }
 .subtable {
     display: flex;
-    margin-top: 2%;
+    width: 100%;
+    position: inherit;
+    top: 37px;
+    /* margin-top: 2%; */
 }
 .ui.celled.table{
     width: 70%;
     margin-left: 15%;
+    /* margin-left: 15%; */
 }
 .sidebtn{
     padding-top: 47px;
@@ -85,18 +111,59 @@
 .sidebtn button{
     display: inline;
     /* padding-top: 50px; */
+    background-color: rgb(32, 214, 32);
+    color: #fff;
 
 }
-.total-amount h3{
-    margin-left: 15%;
+.total-amount {
+    position: inherit;
+    top: 40px;
+    left: -240px;
+
+}
+.ui.button{
+    background-color: rgb(32, 214, 32);
+    color: #fff;
+
 }
 .proceed-btn {
     width: 70%;
-    margin-left: 15%;
+    margin-left: 0%;
+    position: inherit;
+    top: 40px;
 }
 .proceed-btn button{
     width: 100%;
     margin-top: 5px;
+    background-color: rgb(32, 214, 32);
+    color: #fff;
+    
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 70%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
 
