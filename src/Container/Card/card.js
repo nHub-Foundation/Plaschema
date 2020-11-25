@@ -23,7 +23,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card body">
         <div className="cardFlex">
             <div className="icon">
               {
@@ -82,6 +82,9 @@ class Card extends React.Component {
               }
         </div>
       </div>
+
+
+      
     );
   }
 }
