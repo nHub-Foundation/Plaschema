@@ -1,6 +1,6 @@
 .container.enrolment {
     margin: 13% auto;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 .card.enrolment {
@@ -10,23 +10,23 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .card-header {
-    height: 50px;
+    /* height: 20%; */
     border-bottom: 1px solid #8F8F8F;
     display: flex;
     width: 100%;
-    padding-left: 2%;
-    justify-content: space-around;
+    /* padding-left: 2%; */
+    justify-content: space-between;
 }
 .card-header p {
     font-size: 20px;
     color: #8F8F8F;
     margin-top: 10px;
-    text-align: right;
+    text-align: left;
 }
 .card-header img{
-    width: 40px;
+    width: 43px;
     height: 47px;
-    padding-top: 2%;
+    /* margin: 2%; */
     opacity: .40;
     position: relative;
     /* left: 40%; */
@@ -35,7 +35,7 @@
 }
 .card-detail p {
     text-align: center;
-    width: 55%;
+    width: 95%;
     margin: 10% auto;
     color: #8F8F8F;
 }

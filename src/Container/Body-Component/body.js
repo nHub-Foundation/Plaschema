@@ -9,7 +9,7 @@ import background from '../../Assets/body.jpg';
 class Body extends React.Component{
     render() {
         return(
-            <div class='container'>
+            <div class='container body'>
                 <div class='body-text col-8 col-s-12'>
                     <h1>Plateau State Universal Health Care  by PLASCHEMA</h1>
                     <p>Welcome  Plateau Health portal. Our mandate is to ensure access to affordable, equitable, 

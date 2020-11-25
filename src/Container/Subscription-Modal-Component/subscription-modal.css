@@ -3,7 +3,7 @@
     width: 100%;
     height: 550px;
      position: relative; 
-     top: -40px; 
+     /* top: -40px;  */
 }
 .ui.form.subsciption{
     width: 70%;
@@ -15,7 +15,7 @@
 
 .container.subsciption {
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 .addbtn {
@@ -31,13 +31,17 @@
     color: #fff;
     
 }
+.addbtn .ui.button{
+    width: 150px;
+    font-size: 15px;
+}
 .form-name {
    display: flex;
 }
 .form-name i{
     position: relative;
-    left: 73%;
-    top: 25px;
+    left: 63%;
+    top: 55px;
     z-index: 999;
     border-radius: 2px;
  }
@@ -50,7 +54,8 @@
     padding: 7px 10px;
     color: #fff;
     position: relative;
-    left: 150px;
+    left: 22%;
+    top: 35px;
     z-index: 999;
     border-radius: 2px;
 }
@@ -108,19 +113,27 @@
 .sidebtn .btn{
     padding-top: 5px;
 }
+
+.btn .ui.button{
+    width: 120px;
+    font-size: 13px;
+}
+
 .sidebtn button{
     display: inline;
     /* padding-top: 50px; */
     background-color: rgb(32, 214, 32);
     color: #fff;
+    
 
 }
 .total-amount {
     position: inherit;
     top: 40px;
-    left: -240px;
-
+    left: -20%;
 }
+
+
 .ui.button{
     background-color: rgb(32, 214, 32);
     color: #fff;
@@ -138,6 +151,10 @@
     background-color: rgb(32, 214, 32);
     color: #fff;
     
+}
+.proceed-btn .ui.button{
+    width: 150px;
+    font-size: 15px;
 }
 
 .modal {
