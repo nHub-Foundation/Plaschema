@@ -45,11 +45,15 @@ h2{
   justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: inline;
+    justify-content: center;
   }
 }
+/* help with responsiveness of the card at this size to display 2 cards per row */
+/* @media only screen and (max-width: 830px) {
+  .cards{
+      
+    }
+} */

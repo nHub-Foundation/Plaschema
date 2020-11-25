@@ -185,3 +185,41 @@
     display: none;
   }
 
+
+
+  @media only screen and (max-width: 880px) {
+    .container.subsciption {
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+    }
+    .form-name h3 {
+        background-color: rgb(32, 214, 32);
+        color: #fff;
+        width: 30%;
+        height: 7%;
+        padding: 7px 10px;
+        color: #fff;
+        position: relative;
+        left: 10%;
+        top: 35px;
+        z-index: 999;
+        border-radius: 2px;
+    }
+    .form-name i{
+        position: relative;
+        left: 43%;
+        top: 55px;
+        z-index: 999;
+        border-radius: 2px;
+     }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container.subsciption {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+  }
