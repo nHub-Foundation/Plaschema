@@ -1,6 +1,6 @@
 import React from 'react';
 import './body.css';
-import background from '../../Assets/body.jpg';
+import background from '../../assets/body.jpg';
 
 
 
