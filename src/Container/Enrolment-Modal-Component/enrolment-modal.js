@@ -1,6 +1,6 @@
 import React from 'react';
 import './enrolment-modal.css'
-import infoLogo from '../../Assets/info-logo.png';
+import infoLogo from '../../assets/info-logo.png';
 
 
 
