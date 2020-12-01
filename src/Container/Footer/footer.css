@@ -29,15 +29,13 @@
 }
 
 .footer__left button {
-    width: 200px;
+    width: 150px;
 }
 
 .footer__right button {
     width: 150px;
+    /* position: relative;
+    left: 30%; */
 }
 
-.footer__right {
-    min-width: 600px;
-
-}
 
