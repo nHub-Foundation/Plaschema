@@ -1,26 +1,38 @@
 import React from 'react';
 import './header.css';
-import logo from '../../assets/logo.png';
-import avatar from '../../assets/avatar.png';
+import logo from '../../Assets/logo.png';
+import avatar from '../../Assets/avatar.png';
+import LogIn from '../Login/logIn';
 
 
 
 class Header extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      showModal: false
+    state={show:false}  
+    showModal = () => {
+      this.setState ({
+        show:true
+      })
+    
     }
-  }
+
+    hideModal =() => {
+      this.setState ({
+        show:false
+      })
+    }
 
   render() {
     return (
       <div className="header">
-        <img src={logo} alt="Logo" />
+     
+      <img src={logo} alt="Logo" />
+        
         <div className="header__right">
           <img src={avatar} alt="" />
-          <button> LOGIN</button>
+           <div>
+       </div>
+         <LogIn show= {this.state.show} handleClose = {this.hideModal} />
+          <button onClick = {this.showModal}> LOGIN</button>
         </div>
       </div>
     );

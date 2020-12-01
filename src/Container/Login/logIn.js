@@ -3,28 +3,29 @@ import './logIn.css';
 
 
 
-class LogIn extends React.Component {
-    constructor() {
-      super();
-  
-      this.state = {
-        showModal: false
-      }
-    }
 
-    render() {
+const LogIn = ({handleClose, show}) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none"
+    
         return (
-        <div className="signin">
+          <div className = {showHideClassName}> 
+             <div className="signin">
+            <div class = "signin-header"> 
             <h1>Sign In</h1>
+            <i class = 'close icon' onClick = {handleClose}/>
+            </div>
+            <div class = "inputs">
             <input
             type="text"
             placeholder="Username"
             />
             <br/>
+            <br/>
             <input
             type="password"
             placeholder="Password"
             />
+            </div>
             <br/>
             <button>Sign In</button>
             <p className="para">Forgot Password?</p>
@@ -32,7 +33,9 @@ class LogIn extends React.Component {
             <p>New User?</p>
             <button>Sign Up</button>
         </div>
+          </div>
+        
         );    
-    }
-}    
+    };
+ 
 export default LogIn;
