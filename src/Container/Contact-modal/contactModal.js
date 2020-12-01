@@ -23,7 +23,7 @@ return (
               <br/>
               <p>
               CONTACT PHONE
-              0700 752 8328, 09065599457
+              0700 752 8328, 09065599457.
               </p>
               <button className="" onClick={handleClose} >Close</button>
           </div>
