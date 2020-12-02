@@ -90,7 +90,7 @@ class Footer extends React.Component{
                         this.state.show ? (
                             <button type="submit" onClick={onSubmit}>Submit</button>
                         ) : (
-                            <button onClick={showMe}>Subscribe here</button>
+                            <button onClick={showMe}>Subscribe Here</button>
                         )
                     }
 

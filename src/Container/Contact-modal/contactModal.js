@@ -15,7 +15,7 @@ return (
               <h1>CONTACT US</h1>
               <p>
               HEAD OFFICE
-              53 Hospital Place,behind Plateau State Specialist Hospital.Jos,Nigeria  </p>
+              53 Hospital Place,behind Plateau State Specialist Hospital.Jos,Nigeria.  </p>
               <br/>
               <p>
               EMAIL US
