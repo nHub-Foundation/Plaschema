@@ -6,7 +6,6 @@ import Header from '../Header/header';
 // import Body from '../Body-Component/body';
 import LineChart from '../Chart/chart';
 
-
  class App extends React.Component {
 
 
