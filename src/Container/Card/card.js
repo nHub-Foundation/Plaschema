@@ -1,9 +1,9 @@
 import React from 'react';
 import './card.css';
-import Accredit from '../../Assets/accredit.png';
-import Appoint from '../../Assets/appoint.png';
-import Enrol from '../../Assets/enrol.png';
-import Sub from '../../Assets/sub.png';
+import Accredit from '../../assets/accredit.png';
+import Appoint from '../../assets/appoint.png';
+import Enrol from '../../assets/enrol.png';
+import Sub from '../../assets/sub.png';
 import Enrolment from '../Enrolment-Modal-Component/enrolment-modal'
 import Subsciption from '../Subscription-Modal-Component/subscription-modal'
 import Appointment from '../Appointment-Modal-Component/appointment-modal'
@@ -23,7 +23,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className="card">
+      <div className="card body">
         <div className="cardFlex">
             <div className="icon">
               {
@@ -82,6 +82,9 @@ class Card extends React.Component {
               }
         </div>
       </div>
+
+
+      
     );
   }
 }

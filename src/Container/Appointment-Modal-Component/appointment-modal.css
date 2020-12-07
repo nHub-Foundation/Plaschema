@@ -14,7 +14,7 @@
 
 .container.appointment {
     margin: 0% auto;
-    width: 50%;
+    width: 40%;
     height: 50vh;
 }
 
@@ -33,13 +33,52 @@
 }
 .form-name.appointment i {
     position: relative;
-    top: 140px;
-    left: 53%;
+    top: 160px;
+    left: 48%;
     z-index: 999;
     
 }
-.ui.button{
+.ui.button.appointment{
     background-color: rgb(32, 214, 32);
     color: #fff;
+    width: 50%;
+    font-size: 16px;
+    height: 35px;
+    padding: 2%;
 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container.appointment {
+        margin: 0% auto;
+        width: 60%;
+        height: 60vh;
+    }
+    .form-name.appointment h3 {
+        background-color: rgb(32, 214, 32);
+        width: 40%;
+        height: 7%;
+        padding: 7px 20px;
+        color: #fff;
+        position: relative;
+        top: 130px;
+        left: 13%;
+        z-index: 999;
+        border-radius: 2px;
+        font-size: 16px;
+    }
+    .form-name.appointment i {
+        position: relative;
+        top: 160px;
+        left: 35%;
+        z-index: 999;
+        
+    }
+    .ui.form.appointment{
+        width: 70%;
+        margin: 25% auto;
+        position: inherit;
+        top: 0px;
+    }
 }

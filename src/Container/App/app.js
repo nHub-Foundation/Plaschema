@@ -54,7 +54,7 @@ import LineChart from '../Chart/chart';
         <div className="cards">
           {
             items.map(item => (
-              <Card key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+              <Card key={ item.id } heading={ item.heading } description={ item.description } buttonText={ item.buttonText } />
             ))
           }
         </div> */}

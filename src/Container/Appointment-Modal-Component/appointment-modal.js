@@ -15,12 +15,12 @@ const Appointment= ({ handleClose, show }) => {
                 <div className="ui card appointment">
                     <div class="ui form appointment">
                         <div class="field">
-                            <input type="text" placeholder="Enter enrollment ID"/>
+                            <input type="text" placeholder="Enter enrollment ID" required/>
                         </div>
                         <div class="field">
-                            <textarea rows="5" cols="" placeholder="Why do you want to see the Doctor?"></textarea>
+                            <textarea rows="5" cols="" placeholder="Why do you want to see the Doctor?" required></textarea>
                         </div>
-                        <button class="ui button">Submit Request</button>
+                        <button class="ui button appointment">Submit Request</button>
 
                     </div>
                 </div>
