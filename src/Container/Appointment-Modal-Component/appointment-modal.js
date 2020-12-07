@@ -18,7 +18,7 @@ const Appointment= ({ handleClose, show }) => {
                             <input type="text" placeholder="Enter enrollment ID" required/>
                         </div>
                         <div class="field">
-                            <textarea rows="5" cols="" placeholder="Why do you want to see the Doctor?"required></textarea>
+                            <textarea rows="5" cols="" placeholder="Why do you want to see the Doctor?" required></textarea>
                         </div>
                         <button class="ui button appointment">Submit Request</button>
 
