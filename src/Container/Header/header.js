@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
-import logo from '../../Assets/logo.png';
-import avatar from '../../Assets/avatar.png';
+import logo from '../../assets/logo.png';
+import avatar from '../../assets/avatar.png';
 
 
 
