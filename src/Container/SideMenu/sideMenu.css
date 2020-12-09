@@ -2,7 +2,7 @@
     background-color: rgb(32, 214, 32) ;
     color: white;
     width: 20vw;
-    height: 60vh;
+    height: 80vh;
 }
 
 .sidemenu li{
@@ -12,6 +12,6 @@
 }
 .sidemenu li:hover{
     color: yellow;
-    background-color: rgba(43, 58, 56, .2);
+    background-color: rgba(43, 58, 56, 0.2);
     text-align: center;
 }

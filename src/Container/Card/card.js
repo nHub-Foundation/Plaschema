@@ -4,9 +4,9 @@ import Accredit from '../../Assets/accredit.png';
 import Appoint from '../../Assets/appoint.png';
 import Enrol from '../../Assets/enrol.png';
 import Sub from '../../Assets/sub.png';
-import Enrolment from '../Enrolment-Modal-Component/enrolment-modal'
-import Subsciption from '../Subscription-Modal-Component/subscription-modal'
-import Appointment from '../Appointment-Modal-Component/appointment-modal'
+import Enrolment from '../Enrolment-Modal-Component/enrolment-modal';
+import Subsciption from '../Subscription-Modal-Component/subscription-modal';
+import Appointment from '../Appointment-Modal-Component/appointment-modal';
 
 
 class Card extends React.Component {
@@ -63,7 +63,6 @@ class Card extends React.Component {
                 ) : 
                 this.props.buttonText === "Apply Today" ? (
                   <div>
-                    {/* <a href='#'></a> */}
                     <button onClick={this.showModal}>{this.props.buttonText}</button>
                   </div>
                 ) : 

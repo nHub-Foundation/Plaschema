@@ -1,3 +1,16 @@
-/* .canvas{
-    height: 150px;
-} */
+.canvas{
+    /* margin-top: 0 auto; */
+    /* float: right; */
+    height: 40vh;
+    width: 60vw;
+}
+
+.charts{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}

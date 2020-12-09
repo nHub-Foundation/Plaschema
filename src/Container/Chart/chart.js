@@ -43,9 +43,11 @@ class Linecharts extends React.Component {
     
         return (  
             <div className="canvas">  
-                <Line ref="chart" data={data} />  
-                <div>                
-                   <p>Total Hospital visits vs Amount paid to providers</p>
+                <div className="charts">
+                    <Line ref="chart" data={data} />  
+                    <div className="title">                
+                    <p>Total Hospital visits vs Amount paid to providers</p>
+                    </div>
                 </div>
             </div>  
         )  
