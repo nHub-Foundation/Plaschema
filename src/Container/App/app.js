@@ -48,7 +48,9 @@ import Body from '../Body-Component/body';
       <div className="App">
 
         <Header />
-        {/* <LineChart /> */}
+        <div className="line-chart">
+            <LineChart />
+        </div>
         <Body />
         <div className="cards">
           {
