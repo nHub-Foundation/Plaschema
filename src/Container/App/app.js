@@ -48,7 +48,9 @@ import LineChart from '../Chart/chart';
       <div className="App">
 
         <Header />
-        <LineChart />
+        <div className="line-chart">
+            <LineChart />
+        </div>
         {/* <Body />
         <div className="cards">
           {

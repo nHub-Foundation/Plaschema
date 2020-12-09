@@ -14,9 +14,10 @@ h2{
   margin-top: -5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line-chart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
