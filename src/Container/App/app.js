@@ -4,10 +4,20 @@ import Footer from '../Footer/footer';
 import './app.css';
 import Header from '../Header/header';
 import Body from '../Body-Component/body';
-// import LineChart from '../Chart/chart';
+import LineChart from '../Chart/chart';
+import SideMenu from '../SideMenu/sideMenu';
+import AdminCard from '../Adcard/adminCard';
+
 
  class App extends React.Component {
+  state = {
+    adminPage: false
+  }
 
+  switchPage = () => {
+    console.log("click")
+    this.setState((prevState, prevProps) => this.setState({ adminPage: !prevState.adminPage}))
+  }
 
   render() {
     const items = [
@@ -42,23 +52,32 @@ import Body from '../Body-Component/body';
         buttonText: "Book Appointment"
 
       }
-
     ]
     return (
       <div className="App">
+        <Header switchPage={this.switchPage}/>
 
-        <Header />
-        <div className="line-chart">
-            <LineChart />
-        </div>
-        <Body />
-        <div className="cards">
-          {
-            items.map(item => (
-              <Card key={ item.id } heading={ item.heading } description={ item.description } buttonText={ item.buttonText } />
-            ))
-          }
-        </div>
+        {
+          this.state.adminPage ?
+          <div className= "line-chart">
+            <SideMenu />
+            <div className="content">
+              <AdminCard />
+              <LineChart />
+            </div>
+          </div> :
+
+          <>
+            <Body />
+            <div className="cards">
+              {
+                items.map(item => (
+                  <Card key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+                ))
+              }
+            </div>
+          </>
+        }
        <Footer />
       </div>
     );

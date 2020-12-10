@@ -2,7 +2,9 @@
     background-color: rgb(32, 214, 32) ;
     color: white;
     width: 20vw;
-    height: 60vh;
+    height: 80vh;
+    text-align: center;
+    margin-left: 0 auto;
 }
 
 .sidemenu li{

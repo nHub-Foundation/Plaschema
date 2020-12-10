@@ -15,11 +15,13 @@ class Header extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="header">
         <img src={logo} alt="Logo" />
         <div className="header__right">
-          <img src={avatar} alt="" />
+          <p onClick={this.props.switchPage}>Toggle</p>
+          <img src={avatar} alt="Admin" />
           <button> LOGIN</button>
         </div>
       </div>
