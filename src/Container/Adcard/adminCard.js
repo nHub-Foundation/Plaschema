@@ -8,7 +8,7 @@ class AdminCard extends React.Component {
       <div className="adCard">
         <div className="cardFlex">
             <div className="icon">
-                <img src={`https://robohash.org/set_set4/?size=200x200`} alt='robots' />
+                {/* <img src={`https://robohash.org/set_set4/?size=200x200`} alt='robots' /> */}
             </div>
             <div className="details">
                 <h1>
