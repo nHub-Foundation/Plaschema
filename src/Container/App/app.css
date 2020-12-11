@@ -23,14 +23,14 @@ h2{
 .adbody {
   width: 100%;
   display: flex;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   justify-content: space-between;
   
 }
 
 .adcontent {
   width: 80%;
-  /* border: 2px solid green; */
+  border: 3px solid black;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,9 @@ h2{
 }
 
 .adcontent .adcards{
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   height: 30%;
+  width: 100%;
   margin: 10px;
 }
 
