@@ -13,14 +13,14 @@ return (
         <div className='about'>
           <div className='about'>
               <h1>ABOUT US</h1>
-              
+              <br/>              
               <h3>GOAL</h3>
               <p>
               To ensure that every resident of plateau state has equitable 
               access to quality and affordable healthcare 
               service when the needs arises... 
               </p>
-              
+              <br/>
               <h3>VISION</h3>
               <p>
               
@@ -29,7 +29,7 @@ return (
                 plateau state irrespective of their socioeconomic status...
               </p>
                 
-              
+              <br/>
               <h3>OUR MISSION</h3>
               <p>
                 To ensure access to quality healthcare and financial protection for all residents

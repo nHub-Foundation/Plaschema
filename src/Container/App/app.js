@@ -7,6 +7,7 @@ import Body from '../Body-Component/body';
 import LineChart from '../Chart/chart';
 import SideMenu from '../SideMenu/sideMenu';
 import AdminCard from '../Adcard/adminCard';
+import Dashboard from '../Dashboard/dashboard';
 
 
  class App extends React.Component {
@@ -59,12 +60,13 @@ import AdminCard from '../Adcard/adminCard';
 
         {
           this.state.adminPage ?
-          <div className= "line-chart">
-            <SideMenu />
+          <div className= "dashboard">
+            {/* <SideMenu />
             <div className="content">
               <AdminCard />
               <LineChart />
-            </div>
+            </div> */}
+            <Dashboard/>
           </div> :
 
           <>
