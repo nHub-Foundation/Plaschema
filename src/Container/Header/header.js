@@ -1,18 +1,21 @@
 import React from 'react';
 import './header.css';
+import LogIn from '../Login/logIn'
 import logo from '../../assets/logo.png';
-import avatar from '../../assets/avatar.png';
+import avatar from '../../assets/avatar2.png';
 
 
 
 class Header extends React.Component {
-  constructor() {
-    super();
+  state = { show: false };
 
-    this.state = {
-      showModal: false
-    }
-  }
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
 
   render() {
     console.log(this.props)
@@ -22,7 +25,10 @@ class Header extends React.Component {
         <div className="header__right">
           <p onClick={this.props.switchPage}>Toggle</p>
           <img src={avatar} alt="Admin" />
-          <button> LOGIN</button>
+          <div>
+              <LogIn show={this.state.show} handleClose={this.hideModal}/>
+              <button onClick={this.showModal}>Login</button>
+          </div>
         </div>
       </div>
     );

@@ -62,8 +62,8 @@ class Footer extends React.Component{
 
         return(
             <div className="footer">
-                <div className="footer__left">
-                  <div>
+                <div className="footer-content">
+                <div>
                     <About showModal={this.state.showAboutModal} handleClose={this.hideAbout}/>
                     <button onClick={this.showAbout}>About Us</button>
                   </div>
@@ -75,13 +75,13 @@ class Footer extends React.Component{
                     <FaqModal showModal={this.state.showFAQModal} handleClose={this.hideFAQ}/>
                     <button onClick={this.showFAQ}>FAQ</button>
                   </div>
-                </div>
-                <div className="footer__right">
+                
+                <div>
 
                     {
                         this.state.show ? (
                             <>
-                                <input value={this.state.subInput} onChange={handleChange} type="text" />
+                                <input id="footer-input" value={this.state.subInput} onChange={handleChange} type="text" placeholder="Enter your email address" />
                             </>
                         ): null
                     }
@@ -95,7 +95,7 @@ class Footer extends React.Component{
                     }
 
                 </div>
-
+                </div>
             </div>
         )
     }

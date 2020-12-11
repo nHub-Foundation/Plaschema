@@ -14,16 +14,17 @@
 }
 
 
-.icon img {
-    height: 30px;
+.icon.home img {
+    height: 35px;
+    width: 40px;
 }
 
-.details h1{
+.details.home h1{
     font-size: 23px;
     margin-top: 5px;
 }
 
-.details p{
+.details.home p{
     font-size: 15px;
     max-width: 100px;
     justify-content: left;
