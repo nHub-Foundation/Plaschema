@@ -60,15 +60,26 @@ import Dashboard from '../Dashboard/dashboard';
 
         {
           this.state.adminPage ?
-          <div className= "dashboard">
-            {/* <SideMenu />
-            <div className="content">
-              <AdminCard />
+          <div className= "adbody">
+            <SideMenu />
+            <div className="adcontent">
+              <div className= "heading">
+                <h1>Dashboard</h1>
+              </div>
+              <div className="adcards">
+                {
+                  items.map(item => (
+                    <AdminCard key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+                  ))
+                }
+              </div>
               <LineChart />
-            </div> */}
+            </div>
+            
+          <div className= "dashboard">
             <Dashboard/>
           </div> :
-
+ 
           <>
             <Body />
             <div className="cards">

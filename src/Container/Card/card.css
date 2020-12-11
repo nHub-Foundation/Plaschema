@@ -47,7 +47,7 @@
     border: none;
 }
 
-@media only screen and (max-width: 994px) {
+@media only screen and (min-width: 994px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -83,11 +83,6 @@
         width: 163px ;
       }
 }
-
-
-
-
-
 
 /* @media only screen and (max-width: 830px) {
     .card{
