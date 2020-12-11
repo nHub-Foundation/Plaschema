@@ -28,3 +28,56 @@
 .card-detail button {
     width: 50%;
 } */
+
+
+.container.contact {
+  margin: 5% auto;
+  width: 35%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 5px;
+}
+.contact {
+  height: 100%;
+  width: 100%;
+  margin: 3% auto;
+}
+
+.contact address{
+  width: 90%;
+  margin: 5% auto;
+}
+
+.contact h1{
+  color: rgb(32, 214, 32);
+  font-size: 25px;
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
+  font-size: 80%;
+}
+
+.contact a:hover{
+  text-decoration: underline;
+  color: rgb(32, 214, 32);
+}
+
+.contact button{
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 730px) {
+  .container.contact {
+    margin: 5% auto;
+    width: 60%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 5px;
+  }
+}
+
+

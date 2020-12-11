@@ -9,24 +9,29 @@ const About= ({ handleClose, showModal }) => {
 
 return (
     <div className={showHideClassName}>
-      <div className='container enrolment'>
-        <div className='card enrolment'>
-          <div className='card-detail'>
+      <div className='container about '>
+        <div className='about'>
+          <div className='about'>
               <h1>ABOUT US</h1>
+              <br/>              
+              <h3>GOAL</h3>
               <p>
-              GOAL
               To ensure that every resident of plateau state has equitable 
               access to quality and affordable healthcare 
               service when the needs arises... 
               </p>
               <br/>
+              <h3>VISION</h3>
               <p>
-              VISION
+              
               Ensure access to Affordable, Equitable Timely And quality healthcare
                with financial security of all resident of
                 plateau state irrespective of their socioeconomic status...
-                <br/>
-                OUR MISSION
+              </p>
+                
+              <br/>
+              <h3>OUR MISSION</h3>
+              <p>
                 To ensure access to quality healthcare and financial protection for all residents
                  of plateau state using a healthcare financing mechanism structured
                   through a mandatory pooling of cost and risk with fair utilization

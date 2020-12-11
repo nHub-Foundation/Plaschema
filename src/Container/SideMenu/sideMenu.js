@@ -1,25 +1,41 @@
 import React from 'react';
 import './sideMenu.css'
 
-class SideMenu extends React.Component{
-    render(){
+const SideMenu = ({onPageSelect}) => {
         return(
-            <div className="sidemenu">
-                <li>Dashboard</li>
-                <hr/>
-                <li>Enrolment</li>
-                <hr/>
-                <li>Accreditation</li>
-                <hr/>
-                <li>Subscription</li>
-                <hr/>
-                <li>Service Usage</li>
-                <hr/>
-                <li>Reports</li>
-                <hr/>
+            <div className="sidemenu ">
+               <div className="menu-list">
+               <ul>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item " onClick = {() => onPageSelect("dashboard")} >Dashboard</h3>
+                    </li>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item" onClick = {() => onPageSelect("enrolment")}>Enrolment</h3>
+                    </li>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item" onClick = {() => onPageSelect("accreditatiion")}>Accreditation</h3>
+                    </li>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item" onClick = {() => onPageSelect("subscription")}> Subscription</h3>
+                    </li>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item" onClick = {() => onPageSelect("service")}> Service Usage</h3>
+                    </li>
+                    {/* <hr/> */}
+                    <li>
+                        <h3 className="item" onClick = {() => onPageSelect("report")}> Report</h3>
+                    </li>
+                    {/* <hr/> */}
+               </ul>
+               </div>
             </div>
         );
     }
-}
+
 
 export default SideMenu;
