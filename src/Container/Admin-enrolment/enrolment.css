@@ -1,0 +1,105 @@
+.ui.segment.table {
+    background: inherit;
+    width: 100%;
+    margin: 5% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 10vh;
+    position: relative;
+    top: -4vh;
+}
+
+.table-name .table-content h3 {
+    background-color: rgb(32, 214, 32);
+    width: 30%;
+    height: 30px;
+    padding: 5px 47px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    z-index: 999;
+    border-radius: 2px;
+}
+
+.table-card {
+    background: #fff;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 30px;
+}
+
+.table-content {
+    text-align: center;
+    /* margin: 0 auto; */
+    /* width: 90%; */
+    
+}
+.table-content h4{
+    padding: 2%;
+}
+
+/* ---end of header styling */
+
+
+
+.ui.card.enrolment {
+    height: 10% !important;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.card-container {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+}
+.card-container .card-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+
+ .card-container p {
+    width: 90%;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+.scroll {
+    height: 82vh;
+    overflow: scroll;
+    
+}
+.ui.card.header {
+    width: 290px !important;
+    margin-left: 5px;
+}
+.ui.card:first-child{
+    margin-top: 10px;
+}
+
+.ui.segment.details img{
+    width: 30%;
+    height: 40%;
+}
+.enrol-btn button{
+    width: 30%;   
+}
+.enrol-btn button:last-child{
+    margin-left: 10%;   
+}
+.enrol-list button{
+    position: relative;
+    left: 60%;
+    width: 40%;
+} 
+.enrol-list {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* background: #fff; */
+}
+

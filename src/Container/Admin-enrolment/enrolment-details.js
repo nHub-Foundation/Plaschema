@@ -1,6 +1,8 @@
 import React from 'react';
+import './enrolment.css'
 
-const CardDetail = ({ person, selectedMenu }) => {
+
+const EnrolmentDetail = ({ person, selectedMenu }) => {
     if (!person) {
         return <div>Loading...</div>
     }
@@ -37,4 +39,4 @@ const CardDetail = ({ person, selectedMenu }) => {
 
 };
 
-export default CardDetail;
+export default EnrolmentDetail;
