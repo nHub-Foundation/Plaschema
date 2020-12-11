@@ -59,14 +59,24 @@ import AdminCard from '../Adcard/adminCard';
 
         {
           this.state.adminPage ?
-          <div className= "line-chart">
+          <div className= "adbody">
             <SideMenu />
-            <div className="content">
-              <AdminCard />
+            <div className="adcontent">
+              <div className= "heading">
+                <h1>Dashboard</h1>
+              </div>
+              <div className="adcards">
+                {
+                  items.map(item => (
+                    <AdminCard key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+                  ))
+                }
+              </div>
               <LineChart />
             </div>
+            
           </div> :
-
+ 
           <>
             <Body />
             <div className="cards">
