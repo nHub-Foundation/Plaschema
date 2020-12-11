@@ -9,22 +9,24 @@ const Contact = ({ handleClose, showModal }) => {
 
 return (
   <div className={showHideClassName}>
-  <div class='container enrolment'>
-      <div class='card enrolment'>
-          <div class='card-detail'>
+  <div class='container contact'>
+      <div class=' contact'>
+          <div class='contact'>
               <h1>CONTACT US</h1>
-              <p>
+              <address>
               HEAD OFFICE
-              53 Hospital Place,behind Plateau State Specialist Hospital.Jos,Nigeria.  </p>
+              53 Hospital Place,behind Plateau State Specialist Hospital.Jos,Nigeria.  
+              </address>
+              <div>
+              <strong>EMAIL US</strong> <br/>       
+              <a href="mailto: plaschema@plateaustate.gov.ng">plaschema@plateaustate.gov.ng </a>  
+              </div>
               <br/>
-              <p>
-              EMAIL US
-              plaschema@plateaustate.gov.ng </p>
-              <br/>
-              <p>
-              CONTACT PHONE
-              0700 752 8328, 09065599457.
-              </p>
+              <div>
+              <strong>CONTACT PHONE</strong> <br/>
+              <a href="tel:+2347007528328">0700 752 8328</a>,
+              <a href="tel:+2349065599457."> 0906 559 9457</a>
+              </div>
               <button className="" onClick={handleClose} >Close</button>
           </div>
 

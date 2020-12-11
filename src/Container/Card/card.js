@@ -25,7 +25,7 @@ class Card extends React.Component {
     return (
       <div className="card body">
         <div className="cardFlex">
-            <div className="icon">
+            <div className="icon home">
               {
                 this.props.description === "Total Enrolments" ? (
                   <img src={Enrol} alt='not set' />
@@ -43,7 +43,7 @@ class Card extends React.Component {
               
             </div>
 
-            <div className="details">
+            <div className="details home">
                 <h1>
                     {this.props.heading}
                 </h1>

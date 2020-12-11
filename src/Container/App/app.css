@@ -6,7 +6,7 @@
 .App {
   /* text-align: center; */
   /* overflow: hidden; */
-  height:100vh;
+  height: 100vh;
   /* position: relative; */
 }
 
@@ -62,7 +62,7 @@ h2{
   }
 }
 
- @media only screen and (max-width: 840px) {
+ @media only screen and (max-width: 904px) {
   .cards{
       display: flex;
       flex-wrap: wrap;
