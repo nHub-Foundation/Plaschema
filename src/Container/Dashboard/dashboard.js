@@ -7,7 +7,10 @@ import AdminCard from '../Adcard/adminCard';
 import SideMenu from '../SideMenu/sideMenu';
 import EnrolmentHeader from '../Admin-enrolment/enrolment-header';
 import EnrolmentDetail from '../Admin-enrolment/enrolment-details';
-import EnrolmentList from '../Admin-enrolment/enrolment-list'
+import EnrolmentList from '../Admin-enrolment/enrolment-list';
+import SubscriptionHeader from '../Admin-subscription/subscription-header'
+import SubscriptionDetail from '../Admin-subscription/subscription-details';
+import SubscriptionList from '../Admin-subscription/subscription-list';
 
 
 class Dashboard extends React.Component {
@@ -68,7 +71,7 @@ class Dashboard extends React.Component {
         if(this.state.pages === 'enrolment') {
             return (
                 <div>
-                <div className="ui grid">
+                <div className="ui grid dashboard">
                     <div className="ui row">
                         <div className="three wide column">
                             <SideMenu onPageSelect={this.onPageSelect} />
@@ -86,7 +89,31 @@ class Dashboard extends React.Component {
                 </div> 
             </div> 
             )
-        }
+        };
+
+        if(this.state.pages === 'subscription') {
+            return (
+                <div>
+                <div className="ui grid dashboard">
+                    <div className="ui row">
+                        <div className="three wide column">
+                            <SideMenu onPageSelect={this.onPageSelect} />
+                        </div>
+                        <div className="eight wide column middle">
+                            <SubscriptionHeader />
+                            <SubscriptionDetail person={this.state.persons} selectedMenu={this.state.selectedMenu} />
+                        </div>
+                        <div className="four wide column left">
+                            <SearchBar onFormSubmit={this.onSearchSubmit} />
+                            Total: {this.state.persons.length} records. 
+                            <SubscriptionList  user={this.state.persons} onMenuSelect={this.onMenuSelect}/>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            )
+        };
+
 
         return (<div>
           <div className="ui grid">

@@ -1,10 +1,10 @@
 import React from 'react';
-import './enrolment.css';
+import './subscription.css';
 
 
 
 
-const Enrolment = ({ title, id, url, onMenuSelect }) => (
+const Subscription = ({ title, id, url, onMenuSelect }) => (
     <div className='ui card enrolment'>
         <div className="card-container" onClick={() => onMenuSelect(id)}>
             <div className="card-image">
@@ -19,4 +19,4 @@ const Enrolment = ({ title, id, url, onMenuSelect }) => (
 );
 
 
-export default Enrolment;
+export default Subscription;
