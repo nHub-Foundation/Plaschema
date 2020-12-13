@@ -106,9 +106,14 @@
     top: -4vh;
 }
 
+.ui.segment.details h3{
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
 .ui.segment.details p{
     color: #000;
-    width: 100%;
+    
 }
 .enrol-btn button{
     width: 30%;   

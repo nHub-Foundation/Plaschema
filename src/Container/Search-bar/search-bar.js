@@ -1,4 +1,5 @@
 import React from 'react';
+import './search-bar.css';
 
 class SearchBar extends React.Component {
     state = { term: '' }
@@ -19,11 +20,12 @@ class SearchBar extends React.Component {
                 <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="ui fluid icon input">
                         <input 
+                            placeholder="search"
                             type="text" 
                             value={this.state.term}
                             onChange={this.onInputChange} 
                         />
-                        <button class="ui green button">OK</button>
+                        <button class="">OK</button>
                         
                     </div>
                 </form>
