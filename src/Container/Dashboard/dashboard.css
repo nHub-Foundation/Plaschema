@@ -8,6 +8,26 @@
     width: 100%;
 }
 
-.dashboard {
-    /* height: ; */
+.adcards {
+  /* border: 2px solid blue; */
+  height: 30%;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .adcards {
+      display: inline;
+      justify-content: center;
+    }
+  }
+  
+   @media only screen and (max-width: 840px) {
+    .adcards{
+        display: flex;
+        flex-wrap: wrap;
+      }
+  }
+  
