@@ -1,16 +1,17 @@
 import React from 'react';
-import './enrolment.css';
+import './accreditation.css'
 
 
 
 
 
-const EnrolmentHeader = () => (
+
+const AccreditationHeader = () => (
     
-    <div class="enrolcdment-header">
+    <div class="enrolment-header">
         <div class="table-name">
             <div class="table-content">
-                <h3>Enrolment </h3>
+                <h3>Accreditation </h3>
             </div>
         </div>
         <div className='ui segment table'>
@@ -39,7 +40,7 @@ const EnrolmentHeader = () => (
             <div class="four wide column table-header">
                 <div class="table-card">
                     <div class="table-content">
-                        <h4>Retired: </h4>
+                        <h4>Reacreditation: </h4>
                     </div>
                 </div>
             </div>
@@ -50,4 +51,4 @@ const EnrolmentHeader = () => (
 );
 
 
-export default EnrolmentHeader;
+export default AccreditationHeader;

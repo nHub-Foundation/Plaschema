@@ -90,11 +90,11 @@ import Dashboard from '../Dashboard/dashboard';
                 ))
               }
             </div>
-          </>
-          
+          </> 
         }
        <Footer />
-      </div>
+       </div>
+      
     );
   }
 }

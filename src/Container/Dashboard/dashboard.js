@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './dashboard.css'
+import './dashboard.css';
 import SearchBar from '../Search-bar/search-bar';
 // import LineChart from '../Chart/chart';
 import AdminCard from '../Adcard/adminCard';
@@ -8,10 +8,18 @@ import SideMenu from '../SideMenu/sideMenu';
 import EnrolmentHeader from '../Admin-enrolment/enrolment-header';
 import EnrolmentDetail from '../Admin-enrolment/enrolment-details';
 import EnrolmentList from '../Admin-enrolment/enrolment-list';
+import AccreditationHeader from '../Admin-Accreditation/accreditation-header';
+import AccreditationDetail from '../Admin-Accreditation/accreditation-details';
+import AccreditationList from '../Admin-Accreditation/acccreditation-list';
 import SubscriptionHeader from '../Admin-subscription/subscription-header'
 import SubscriptionDetail from '../Admin-subscription/subscription-details';
 import SubscriptionList from '../Admin-subscription/subscription-list';
-
+import ServiceHeader from '../Admin-service-usage/service-header';
+import ServiceDetail from '../Admin-service-usage/service-details';
+import ServiceList from '../Admin-service-usage/service-list';
+import ReportHeader from '../Admin-Report/report-header'
+import ReportDetail from '../Admin-Report/report-details';
+import ReportList from '../Admin-Report/report-list';
 
 class Dashboard extends React.Component {
     state = { persons: [], selectedMenu: null, pages:"" };
@@ -132,6 +140,32 @@ class Dashboard extends React.Component {
             )
         };
 
+
+        if(this.state.pages === 'accreditation') {
+            return (
+                <div>
+                <div className="ui grid dashboard">
+                    <div className="ui row">
+                        <div className="three wide column">
+                            <SideMenu onPageSelect={this.onPageSelect} />
+                        </div>
+                        <div className="eight wide column middle">
+                            <AccreditationHeader />
+                            <AccreditationDetail person={this.state.persons} selectedMenu={this.state.selectedMenu} />
+                        </div>
+                        <div className="four wide column left">
+                            <SearchBar onFormSubmit={this.onSearchSubmit} />
+                            Total: {this.state.persons.length} records. 
+                            <AccreditationList  user={this.state.persons} onMenuSelect={this.onMenuSelect}/>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            )
+        };
+
+
+
         if(this.state.pages === 'subscription') {
             return (
                 <div>
@@ -148,6 +182,55 @@ class Dashboard extends React.Component {
                             <SearchBar onFormSubmit={this.onSearchSubmit} />
                             Total: {this.state.persons.length} records. 
                             <SubscriptionList  user={this.state.persons} onMenuSelect={this.onMenuSelect}/>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            )
+        };
+
+
+
+        if(this.state.pages === 'service') {
+            return (
+                <div>
+                <div className="ui grid dashboard">
+                    <div className="ui row">
+                        <div className="three wide column">
+                            <SideMenu onPageSelect={this.onPageSelect} />
+                        </div>
+                        <div className="eight wide column middle">
+                            <ServiceHeader />
+                            <ServiceDetail person={this.state.persons} selectedMenu={this.state.selectedMenu} />
+                        </div>
+                        <div className="four wide column left">
+                            <SearchBar onFormSubmit={this.onSearchSubmit} />
+                            Total: {this.state.persons.length} records. 
+                            <ServiceList  user={this.state.persons} onMenuSelect={this.onMenuSelect}/>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            )
+        };
+
+
+        if(this.state.pages === 'report') {
+            return (
+                <div>
+                <div className="ui grid dashboard">
+                    <div className="ui row">
+                        <div className="three wide column">
+                            <SideMenu onPageSelect={this.onPageSelect} />
+                        </div>
+                        <div className="eight wide column middle">
+                            <ReportHeader />
+                            <ReportDetail person={this.state.persons} selectedMenu={this.state.selectedMenu} />
+                        </div>
+                        <div className="four wide column left">
+                            <SearchBar onFormSubmit={this.onSearchSubmit} />
+                            Total: {this.state.persons.length} records. 
+                            <ReportList  user={this.state.persons} onMenuSelect={this.onMenuSelect}/>
                         </div>
                     </div>
                 </div> 

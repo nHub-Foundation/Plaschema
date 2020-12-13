@@ -115,25 +115,25 @@
     color: #000;
     
 }
-.enrol-btn button{
+.sub-btn button{
     width: 30%;   
 }
-.enrol-btn button:last-child{
+.sib-btn button:last-child{
     margin-left: 10%;   
 }
 
-.enrol-list {
+.sub-list {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: auto;
 }
-.enrol button {
+.sub button {
     position: relative;
     left: 60%;
     width: 40%;
 }
-.enrol {
-    height: auto;
+.sub {
+    height: 105vh;
     background: inherit;
     width: 100%;
     margin: 0 auto;

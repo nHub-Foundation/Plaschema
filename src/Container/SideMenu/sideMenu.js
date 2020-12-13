@@ -16,7 +16,7 @@ const SideMenu = ({onPageSelect}) => {
                     </li>
                     {/* <hr/> */}
                     <li>
-                        <h3 className="item" onClick = {() => onPageSelect("accreditatiion")}>Accreditation</h3>
+                        <h3 className="item" onClick = {() => onPageSelect("accreditation")}>Accreditation</h3>
                     </li>
                     {/* <hr/> */}
                     <li>
