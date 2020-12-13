@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './dashboard.css'
 import SearchBar from '../Search-bar/search-bar';
-import LineChart from '../Chart/chart';
+// import LineChart from '../Chart/chart';
 import AdminCard from '../Adcard/adminCard';
 import SideMenu from '../SideMenu/sideMenu';
 import EnrolmentHeader from '../Admin-enrolment/enrolment-header';
@@ -50,22 +50,63 @@ class Dashboard extends React.Component {
   
 
     render() {
+        const items = [
+            {
+              id: 1,
+              heading: "150K",
+              description: "Total Enrolments",
+              buttonText: "Enrol Today"
+      
+            },
+      
+             {
+               id: 2,
+               heading: "450",
+               description: "Facilities Accredited",
+               buttonText: "Apply Today"
+      
+            },
+      
+            {
+              id: 3,
+              heading: "120K",
+              description: "Active Subscriptions",
+              buttonText: "Pay Subscription"
+      
+            },
+      
+            {
+              id: 4,
+              heading: "3650+",
+              description: "Healthcare Professionals",
+              buttonText: "Book Appointment"
+      
+            }
+          ]
 
         if(this.state.pages ==='dashboard') {
-            return (<div>
+            return (
+            <div>
                 <div className="ui grid">
                     <div className="ui row">
                         <div className="three wide column">
                             <SideMenu onPageSelect={this.onPageSelect} />
                         </div>
                         <div className="twelve wide column">
-                          <AdminCard />
-                          <LineChart /> 
+                        <div className="adcards">
+                            {
+                            items.map(item => (
+                                <AdminCard key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+                            ))
+                            }
+                        </div>
+                          {/* <LineChart />  */}
                         </div>
                        
                     </div>
                 </div> 
-            </div>  )
+            </div> 
+            )
         };
 
         if(this.state.pages === 'enrolment') {
@@ -115,20 +156,28 @@ class Dashboard extends React.Component {
         };
 
 
-        return (<div>
+        return (
+        <div>
           <div className="ui grid">
               <div className="ui row">
                   <div className="three wide column">
                       <SideMenu onPageSelect={this.onPageSelect} />
                   </div>
                   <div className="twelve wide column">
-                  <AdminCard />
-                  <LineChart />
+                    <div className="adcards">
+                        {
+                        items.map(item => (
+                            <AdminCard key={item.id} heading={item.heading} description={item.description} buttonText={item.buttonText} />
+                        ))
+                        }
+                    </div>
+                  {/* <LineChart /> */}
                   </div>
                  
               </div>
           </div> 
-      </div>  )
+        </div>
+      )
 
       
     }
