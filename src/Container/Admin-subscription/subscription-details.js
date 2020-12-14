@@ -9,7 +9,7 @@ const SubscriptionDetail = ({ person, selectedMenu }) => {
 
     return (
         <div>
-             {
+            {
                 person.length ? person.map((item) => {
                     if (item.id === selectedMenu) {
                         return (
@@ -27,6 +27,7 @@ const SubscriptionDetail = ({ person, selectedMenu }) => {
                             </div>
                         )
                     }
+                    return null;
                 }) : null
             }
         </div>

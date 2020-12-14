@@ -7,7 +7,7 @@ const CardDetail = ({ person, selectedMenu }) => {
 
     return (
         <div>
-             {
+            {
                 person.length ? person.map((item) => {
                     if (item.id === selectedMenu) {
                         return (
@@ -28,6 +28,7 @@ const CardDetail = ({ person, selectedMenu }) => {
                             </div>
                         )
                     }
+                    return null;
                 }) : null
             }
         </div>

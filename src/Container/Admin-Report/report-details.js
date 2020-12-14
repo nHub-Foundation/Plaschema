@@ -10,7 +10,7 @@ const ReportDetail = ({ person, selectedMenu }) => {
 
     return (
         <div>
-             {
+            {
                 person.length ? person.map((item) => {
                     if (item.id === selectedMenu) {
                         return (
@@ -24,41 +24,41 @@ const ReportDetail = ({ person, selectedMenu }) => {
                                     <table class="ui celled table report">
                                         <thead>
                                             <tr>
-                                            <th>Code</th>
-                                            <th>Service</th>
-                                            <th>Beneficiary</th>
-                                            <th>Amount</th>
-                                            <th>Rating</th>
+                                                <th>Code</th>
+                                                <th>Service</th>
+                                                <th>Beneficiary</th>
+                                                <th>Amount</th>
+                                                <th>Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="beneficiary">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="beneficiary">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="beneficiary">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="beneficiary">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="beneficiary">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="beneficiary">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="beneficiary">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="beneficiary">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -72,6 +72,7 @@ const ReportDetail = ({ person, selectedMenu }) => {
                             </div>
                         )
                     }
+                    return null;
                 }) : null
             }
         </div>

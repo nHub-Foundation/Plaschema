@@ -10,7 +10,7 @@ const AccreditationDetail = ({ person, selectedMenu }) => {
 
     return (
         <div>
-             {
+            {
                 person.length ? person.map((item) => {
                     if (item.id === selectedMenu) {
                         return (
@@ -21,7 +21,7 @@ const AccreditationDetail = ({ person, selectedMenu }) => {
                                     <p>Key contact Details:{item.albumId}</p>
                                     <p>Status: {item.thumbnailUrl}</p>
                                     <p>Expiry Date: {item.thumbnailUrl}</p>
-                                    <a>link to CAC documents</a>
+                                    <a href='https://link.com'>link to CAC documents</a>
                                     <div className="accredit-btn">
                                         <button class="">Approve</button>
                                         <button class="">Query</button>
@@ -31,6 +31,7 @@ const AccreditationDetail = ({ person, selectedMenu }) => {
                             </div>
                         )
                     }
+                    return null;
                 }) : null
             }
         </div>

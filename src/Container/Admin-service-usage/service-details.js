@@ -10,7 +10,7 @@ const ServiceDetail = ({ person, selectedMenu }) => {
 
     return (
         <div>
-             {
+            {
                 person.length ? person.map((item) => {
                     if (item.id === selectedMenu) {
                         return (
@@ -21,41 +21,41 @@ const ServiceDetail = ({ person, selectedMenu }) => {
                                     <table class="ui celled table service">
                                         <thead>
                                             <tr>
-                                            <th>Code</th>
-                                            <th>Service</th>
-                                            <th>facility</th>
-                                            <th>Amount</th>
-                                            <th>Rating</th>
+                                                <th>Code</th>
+                                                <th>Service</th>
+                                                <th>facility</th>
+                                                <th>Amount</th>
+                                                <th>Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="facility">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="facility">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="facility">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="facility">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="facility">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="facility">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                             <tr>
-                                            <td data-label="Code"></td>
-                                            <td data-label="Service">{}</td>
-                                            <td data-label="facility">{}</td>
-                                            <td data-label="Amount">{}</td>
-                                            <td data-label="Rating">{}</td>
+                                                <td data-label="Code"></td>
+                                                <td data-label="Service">{}</td>
+                                                <td data-label="facility">{}</td>
+                                                <td data-label="Amount">{}</td>
+                                                <td data-label="Rating">{}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -64,6 +64,7 @@ const ServiceDetail = ({ person, selectedMenu }) => {
                             </div>
                         )
                     }
+                    return null;
                 }) : null
             }
         </div>
