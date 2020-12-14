@@ -89,8 +89,9 @@ import Dashboard from '../Dashboard/dashboard';
                 ))
               }
             </div>
-          </>
+          </> 
         }
+       </div>
        <Footer />
       </div>
     );

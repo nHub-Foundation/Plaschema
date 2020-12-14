@@ -7,7 +7,7 @@ import './enrolment.css';
 
 const EnrolmentHeader = () => (
     
-    <div class="enrolment-header">
+    <div class="enrolcdment-header">
         <div class="table-name">
             <div class="table-content">
                 <h3>Enrolment </h3>
