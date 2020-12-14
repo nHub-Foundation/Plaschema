@@ -7,8 +7,8 @@ import './subscription.css'
 
 
 const SubscriptionList= ({user, onMenuSelect}) => (
-    <div className="enrol">
-        <div class="enrol-list">
+    <div className="sub">
+        <div class="sub-list">
             <div className="scroll">
                 {
                     user.map((person) => <Subscription key={person.id} title={ person.title } id={ person.id } url={ person.url } onMenuSelect={onMenuSelect}/>)

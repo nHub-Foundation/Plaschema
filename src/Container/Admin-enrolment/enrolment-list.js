@@ -16,6 +16,7 @@ const EnrolmentList= ({user, onMenuSelect}) => (
 
             </div>
         </div>
+    <button class="">Approve all</button>
     <button class="">Export</button>
     </div>
 )

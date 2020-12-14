@@ -1,11 +1,9 @@
 import React from 'react';
-import './accreditation.css'
+import './service.css'
 
 
 
-
-
-const Accreditation = ({ title, id, url, onMenuSelect }) => (
+const Service = ({ title, id, url, onMenuSelect }) => (
     <div className='ui card enrolment'>
         <div className="card-container" onClick={() => onMenuSelect(id)}>
             <div className="card-image">
@@ -20,4 +18,4 @@ const Accreditation = ({ title, id, url, onMenuSelect }) => (
 );
 
 
-export default Accreditation;
+export default Service;
